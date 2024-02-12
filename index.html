@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carolina Navarrete</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Style for the typing animation */
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid rgba(255, 151, 245, 0.814); /* Adjust the color and thickness as needed */
+    animation: typing 2s steps(30, end), blink-caret .5s step-end infinite;
+  }
+    .profile-picture {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it circular */
+    margin: auto; /* Center the profile picture horizontally */
+    display: block; /* Ensure block-level element behavior */
+    margin-bottom: 10%;
+  }
+  .header {
+    padding: 15px 20px; /* Adjust the padding as needed */
+    background-color: rgb(7, 73, 114);
+    color: #fff;
+  }
+  .icon {
+    vertical-align: -.125em;
+    padding: 10%;
+    height:35px;
+    width: 35px;
+  }
+  .card {
+    margin-bottom: 10%;
+  }
+
+  .btn {
+    margin-bottom: 2%;
+  }
+    .skill-container {
+        max-width: 100%;
+        margin: auto;
+        padding: 20px; 
+    }
+    .skills {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .progress-bar {
+        background-color: #ddd;
+        border-radius: 10px;
+        height: 20px;
+        width: 100%;
+        /* padding-left: 20px; */
+        /* overflow: hidden; */
+    }
+
+    .progress {
+        background-color: #2600ff; /* Progress color */
+        height: 100%;
+        width: 0; /* Initial width is 0 */
+        border-radius: 10px;
+        /* padding-left: 20px; */
+        /* transition: width 0.5s ease;  */
+    }
+
+    
+
+  /* Keyframe animation for typing */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* Keyframe animation for caret blinking */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    20% { border-color: rgb(255, 185, 227) }
+  }
+</style>
+</head>
+<body>
+        <!--Icons, Provided by Bootstrap -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> 
+            <!--Misc Icons-->
+            <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+            </symbol>
+            <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </symbol>
+            <symbol id="star" viewbox="0 0 18 18">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </symbol>
+                <!--Platforms/Socials-->
+            <symbol id="bootstrap" viewBox="0 0 118 94">
+                <title>Bootstrap</title>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+            </symbol>
+            <symbol id="github" viewbox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </symbol>
+            <symbol id="linkedin" viewbox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </symbol>
+            <symbol id="email" viewbox="0 0 16 16">
+                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z"/>
+            </symbol>
+            <symbol id="star-empty" viewBox="0 0 16 16">
+                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52z"/>
+            </symbol>
+            </svg>
+
+<!-- Header -->
+<header class="text-white" style="background-color:rgb(161, 205, 168);">
+  <div class="container text-center">
+    <!-- Typing Animation for the title -->
+    <h1 class="typing-animation">Carolina Navarrete</h1>
+  </div>
+</header>
+
+<!-- Content -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <aside class="col-lg-3">
+      <div class="py-4" style="background-color:rgb(251, 220, 226); ">
+        <div class="container">
+          <img class="profile-picture mb-4" src="RefContent/Profile.jpg" alt="Profile Picture">
+          <table class="tableft">
+            <tr><td style="text-align:left"><a href="https://astronomy.utexas.edu/">Department of Astronomy</a></td></tr>
+            <tr><td style="text-align:left"><a href="http://www.utexas.edu/">The University of Texas at Austin</a></td></tr>
+            <tr><td style="text-align:left"> <b>Location:</b>Austin, Texas</td></tr>
+            <br>
+            <tr><td style="text-align:left"><b>Email:</b> ca.navarrete01@gmail.com</td></tr>
+            <tr><td style="text-align:left"><b>Phone:</b> (956)-466-6021</td></tr>
+            <tr><td style="text-align:left"><a href="https://www.linkedin.com/in/carolina-navarrete-a764b3285/"><b>LinkedIn</b> </a></td></tr>
+            <tr><td style="text-align:left"><a href="https://github.com/canavarrete01"><b>GitHub</b> </a></td></tr>
+            <tr><td style="text-align:left"> <a href="RefContent/resume.pdf"> <b>CV</b> </a></td></tr>
+        </table>
+        </div>
+      </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="col-lg-9">
+      <div class="bg-white py-4">
+        <div class="container">
+          <!-- About Section-->
+          <h2>About Me</h2>
+          <p>Hello! I am a senior at UT Austin majoring in Astronomy with a minor in Mexican-American studies and Computer Science. 
+            My interests include exoplanet studies, astrophysics, scientific software development, and data modelling.</p>
+        </div>
+        <div class="container">
+        <!-- Project Section -->
+        <!-- <h2>Skills</h2>
+        <div class="row">
+            <div class="skill-container">
+            <div class="skills">
+                <div>Python</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div> <Adjust the width to represent the skill level (e.g., 80%) -->
+                <!-- </div>
+            </div>
+
+            <div class="skills">
+                <div class="skill-name">Java</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div> Adjust the width to represent the skill level (e.g., 70%) -->
+                <!-- </div>
+            </div>
+
+            <div class="skills">
+                <div class="skill-name">HTML</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div> 
+                </div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skills">
+                <div>Julia</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div> Adjust the width to represent the skill level (e.g., 80%) 
+                </div>
+            </div> 
+
+            <div class="skills">
+                <div class="skill-name">CSS</div> 
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>  Adjust the width to represent the skill level (e.g., 70%) 
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div> 
+                </div>
+            </div>
+        </div>
+        </div>
+  
+        <br> -->
+
+            <!-- Project Section -->
+            <h2>Projects</h2>
+            <div class="row g-4">
+
+                <!-- First column -->
+                <div class="col-md-6">
+                    <div class="row g-4">
+                        <!-- First card -->
+                        <div class="col">
+                            <div class="card">
+                                <img class="card-img-top" src="RefContent/download.jpg">
+                                <div class="card-body">
+                                  <h5 class="card-title"><b>Exoplanet Atmospheres Research</b> Undergraduate Thesis</h5>
+                                  <p class="card-text">My research primarily focuses on using computational techniques to analyze the atmosphere of exoplanets. Much of my work involves modeling the atmospheres of Hot Jupiters using 1D and 2D retrieval methods.</p>
+                                  <div class="d-grid gap-2">
+                                  <a href="https://github.com/canavarrete01/METIS_V1" class="btn btn-outline-secondary">GitHub Repository</a>
+    
+                                  <a href="https://aas243-aas.ipostersessions.com/default.aspx?s=6D-12-A6-E7-BB-10-19-9A-7A-08-2A-CB-E0-CA-E9-E4&guestview=true" class="btn btn-outline-primary">Research Poster (AAS Winter 2024)</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second card -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card">
+                                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#00000"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Example</text></svg> -->
+                                <img class="card-img-top" src="RefContent/screen.png">
+                                <div class="card-body">
+                                    <h5 class="card-title"><b>Game Developement</b> Technical Project</h5>
+                                    <p class="card-text">A side-scrolling endless runner game where the user, as a fairy character, dodges obstacles and collects coins. Developed in the platform Processing using Java and Python.</p>
+                                    <div class="d-grid gap-2">
+                                    <a href="https://github.com/canavarrete01/FairyArcadeGame" class="btn btn-outline-secondary">GitHub Repository</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third card -->
+                        <div class="col">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="card">
+                                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#00000"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Example</text></svg> -->
+                                    <img class="card-img-top" src="RefContent/lightcurve_result.png">
+                                    <div class="card-body">
+                                      <h5 class="card-title"><b>Exoplanet Light Curve Detection and Analysis</b> Personal Project</h5>
+                                      <p class="card-text">Using observed data from the Kepler Exoplanet Database, I selected known exoplanets (HAT-P-7 b & HIP 41378) to study their physical properties as well as analyze their secondary eclipses. Developed in Jupyter Labs using Python.</p>
+                                      <div class="d-grid gap-2">
+                                      <a href="RefContent/LightCurve.pdf" class="btn btn-outline-secondary">Project's Notebook</a>
+                                  
+                                      </div>
+                                  </div>
+                                  </div>
+                            </div>
+                            </div>
+
+                     </div>
+                     </div>
+                
+                <!-- Second column -->
+                <div class="col-md-6">
+                    <div class="row g-4">
+
+                        <!-- Fifth card -->
+                        <div class="col">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="card-header">
+                                    Latest
+                                  </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">This website!</h5>
+                                    <p class="card-text">This website was built from scatch using HTML, CSS, Javascript and Bootstrap.</p>
+                                    <a href="https://github.com/canavarrete01/METIS_V1" class="btn btn-primary">Theme GitHub Repository</a>
+                                  </div>
+                                  <div class="card-footer text-body-secondary">
+                                    Updated Last: 1 Day Ago
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Sixth card -->
+                        <div class="col">
+                            <div class="card">
+                                <!-- Card content -->
+                                <img class="card-img-top" src="RefContent/chem.png">
+                                <div class="card-body">
+                                    <h5 class="card-title"><b>Chemical Cartography of the Milky Way </b> Technical Project</h5>
+                                    <p class="card-text">Investigated the metallicity distribution of OBAF-type disk stars across the Milky Way using APOGEE and GAIA
+                                        DR3 data.Analyzed chemical signatures in the Milky Way using statistical analysis, data fitting & visualization, and
+                                        mathematical modeling. Developed in Jupyter Labs using Python.</p>
+                                <div class="d-grid gap-2">
+                                <a href="https://docs.google.com/presentation/d/19TRkjEbRBIdj6291sVG2FusWxavHQju3NUGtOYHVxFo/edit?usp=sharing" class="btn btn-outline-secondary">Research Poster</a>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <!-- Seventh card -->
+                        <div class="col">
+                            <div class="card">
+                                <!-- Card content -->
+                                <img class="card-img-top" src="RefContent/vast.png">
+                                <div class="card-body">
+                                  <h5 class="card-title"><b>Visual Analytics Science and Technology (VAST) Mini Challenge </b> Technical Project</h5>
+                                  <p class="card-text">Visualized water pollution with the given hydrology datasets derived from a preserve. Applied various data visualization techniques such as interactive plots, graphic user interfaces, and data reduction/binning. Developed in Google Collab with team, using Python, DataFrames.Py, and Seaborn.Py</p>
+                                  <div class="d-grid gap-2">
+                                  <a href="https://colab.research.google.com/drive/1GxtIeH3rGywEZKStImUmsNO20fs7LGSw?usp=sharing" class="btn btn-outline-secondary">Project's Collab Notebook</a>
+                              
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+</main>
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="icon" width="30" height="30"><use xlink:href="#star"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Carolina Navarrete </span>
+          </div>
+    
+          <!--Social Media Links-->
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="mailto:ca.navarrete01@gmail.com"><svg class="icon" width="24" height="24"><use xlink:href="#email"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/carolina-navarrete-a764b3285/"><svg class="icon" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/canavarrete01"><svg class="icon" width="24" height="24"><use xlink:href="#github"/></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+      
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
